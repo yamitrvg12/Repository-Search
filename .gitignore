@@ -1,3 +1,5 @@
 # Build and Release Folders
 node_modules/
 public/
+coverage/
+.vscode/

@@ -49,7 +49,6 @@ class FormularioBusqueda extends Component {
     this.setState({
       sort: value
     });
-    console.log(this.state);
   }
 
   render() {
@@ -71,7 +70,7 @@ class FormularioBusqueda extends Component {
         <Dropdown
           id={'filter-results'}
           type={'select'}
-          title={'Ordenar'}
+          title={'Ordenar por'}
           options={FILTER_OPTIONS}
           onClickFilter={this.handleSort}
         />
@@ -238,7 +237,6 @@ class App extends Component {
             <ResultStats totalResult={this.state.totalResult} />
           </div>
         </div>
-
         <div className="holder">
           <Resultados
             resultados={this.state.resultados}
